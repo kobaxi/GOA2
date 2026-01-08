@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>External, Inline და Internal CSS დემო</title>
+  <style>
+    .cta-btn {
+      background-color: #1f7aec;
+      color: white;
+      font-size: 16px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .cta-btn:hover {
+      background-color: #155bb0;
+    }
+  </style>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body style="margin: 24px; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;">
+
+  <h1 style="color: #e63946; font-size: 32px; margin-bottom: 12px;">
+    Inline CSS — ეს სათაური სტილიზებულია პირდაპირ ელემენტზე
+  </h1>
+
+  <p class="external-paragraph">
+    External CSS — ეს პარაგრაფი იღებს სტილს გარე ფაილიდან (styles.css).
+  </p>
+
+  <button class="cta-btn">Internal CSS — ღილაკი</button>
+
+  <hr style="margin: 24px 0;" />
+
+  <div>
+    <span style="margin-right: 8px;">:heart:</span> Click to react
+    <span style="margin: 0 8px;">:laughing:</span> Click to react
+    <span style="margin-left: 8px;">:joy:</span> Click to react
+  </div>
+
+  <p style="color: #555; margin-top: 16px;">
+  </p>
+</body>
+</html>
