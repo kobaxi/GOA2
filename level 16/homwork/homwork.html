@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>მარტივი ვებსაიტი ცხრილებით</title>
+</head>
+<body>
+
+    <h1>მარტივი ვებსაიტი</h1>
+
+    <nav>
+        <a href="#home">მთავარი გვერდი</a> |
+        <a href="#register">რეგისტრაცია</a> |
+        <a href="#results">ოლიმპიადის შედეგები</a>
+    </nav>
+
+    <hr>
+
+    <section id="home">
+        <h2>მთავარი გვერდი</h2>
+        <p>კეთილი მოგესალმოთ ჩვენს ვებსაიტზე! გამოიყენეთ ზემოთ მოცემული ნავიგაცია გადასასვლელად რეგისტრაციასა და ცხრილზე.</p>
+    </section>
+
+    <hr>
+
+    <section id="register">
+        <h2>რეგისტრაცია</h2>
+        <form action="#" method="post">
+            <label for="name">სახელი:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">იმეილი:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">პაროლი:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="submit" value="რეგისტრაცია">
+        </form>
+    </section>
+
+    <hr>
+
+    <section id="results">
+        <h2>ოლიმპიადის შედეგები</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ნომერი</th>
+                    <th>სახელი</th>
+                    <th>მედალი</th>
+                    <th>ქვეყანა</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>ჯონ დოუ</td>
+                    <td>ოქრო</td>
+                    <td>საქართველო</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ანა სმიტი</td>
+                    <td>ვერცხლი</td>
+                    <td>აშშ</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>მიხაელ ბერი</td>
+                    <td>ბრინჯაო</td>
+                    <td>გერმანია</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
