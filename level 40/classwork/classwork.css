@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+/* 1 მარცხენა ზედა → მარჯვენა ქვედა */
+.gradient1 {
+    background: linear-gradient(to bottom right, red, blue);
+}
+
+/* 2 მარჯვენა ზედა → მარცხენა ქვედა */
+.gradient2 {
+    background: linear-gradient(to bottom left, purple, orange);
+}
+
+/* 3 90 გრადუსი */
+.gradient3 {
+    background: linear-gradient(90deg, green, yellow);
+}
+
+/* 4 135 გრადუსი */
+.gradient4 {
+    background: linear-gradient(135deg, pink, cyan);
+}
+
+/* 5 სამი ფერი (წითელი, ყვითელი, მწვანე) */
+.gradient5 {
+    background: linear-gradient(red 33%, yellow 33% 66%, green 66%);
+}
+
+/* 6 radial – წრის ფორმა */
+.gradient6 {
+    background: radial-gradient(circle, red, blue);
+}
+
+/* 7 radial – ოვალური ფორმა */
+.gradient7 {
+    background: radial-gradient(ellipse, orange, purple);
+}

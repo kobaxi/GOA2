@@ -1,0 +1,26 @@
+.title {
+    color: darkblue;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+}
+
+#intro {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: darkorange;
+}
