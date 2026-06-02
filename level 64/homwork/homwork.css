@@ -1,0 +1,19 @@
+/* 1. h1, h2 და h3 ერთდროულად გაალურჯოს */
+:is(h1, h2, h3) {
+    color: blue;
+}
+
+/* 2. ul-ის მხოლოდ მეოთხე ელემენტი გააწითლოს */
+ul li:nth-child(4) {
+    color: red;
+}
+
+/* 3. header, main და footer-ში არსებული p თეგები */
+:is(header, main, footer) p {
+    color: green;
+}
+
+/* 4. .article და .sidebar-ში არსებული button და a ელემენტები */
+:is(.article, .sidebar) :is(button, a) {
+    padding: 10px;
+}

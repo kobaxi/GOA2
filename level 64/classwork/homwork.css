@@ -1,0 +1,9 @@
+/* სიაში მესამე ელემენტი */
+li:nth-child(3) {
+    color: red;
+}
+
+/* card რომელსაც button არ აქვს */
+.card:not(:has(button)) {
+    color: yellow;
+}

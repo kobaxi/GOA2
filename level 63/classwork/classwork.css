@@ -1,0 +1,28 @@
+li:nth-child(3){
+    color: red;
+}
+
+.card:not(:has(button)){
+    color: yellow;
+}
+
+button:hover{
+    background-color: blue;
+    color: white;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+input:focus{
+    border: 2px solid red;
+}
+
+li:first-child{
+    font-weight: bold;
+}
+
+li:last-child{
+    text-decoration: underline;
+}

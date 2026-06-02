@@ -1,0 +1,44 @@
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+  }
+
+  .box1 {
+    background-color: red;
+    position: relative;
+    left: 100px;
+    top: 20px;
+  }
+  
+
+  .box2 {
+    background-color: blue;
+  }
+  
+  .box2:hover {
+    transform: rotateY(180deg);
+  }
+  
+
+  .box3 {
+    background-color: green;
+  }
+  
+  .box3:hover {
+    transform: scale(1.5);
+  }
+  
+
+  .box4 {
+    background-color: purple;
+  }
+  
+  .box4:hover {
+    transform: translate3d(50px, 50px, 50px);
+  }

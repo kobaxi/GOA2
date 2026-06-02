@@ -1,0 +1,15 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 100px;
+
+    transform:
+        translate(100px, 50px)
+        rotate3d(1, 0, 0, 180deg)
+        scale(1.5)
+        rotate3d(1, 1, 0, 45deg)
+        translateY(50px)
+        scale(2)
+        rotateZ(90deg);
+}

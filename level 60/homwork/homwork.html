@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>CSS Animation & Media Query</title>
+
+  <style>
+
+    body {
+      font-family: Arial;
+      background-color: white;
+      padding: 40px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+
+      animation:
+        moveRight 3s linear,
+        changeColor 3s forwards;
+    }
+
+    .circle {
+      width: 120px;
+      height: 120px;
+      background-color: orange;
+      border-radius: 50%;
+      margin-top: 50px;
+
+      animation: rotateBox 2s linear infinite;
+    }
+
+    button {
+      margin-top: 50px;
+      padding: 10px 20px;
+      background-color: blue;
+      color: white;
+      border: none;
+
+      transition: 0.5s;
+    }
+
+    button:hover {
+      background-color: green;
+      transform: scale(1.1);
+    }
+
+    @keyframes moveRight {
+      from {
+        left: 0;
+      }
+
+      to {
+        left: 300px;
+      }
+    }
+
+    @keyframes changeColor {
+      from {
+        background-color: red;
+      }
+
+      to {
+        background-color: blue;
+      }
+    }
+
+    @keyframes rotateBox {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-color: lightgray;
+      }
+
+      .box {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      body {
+        background-color: lightblue;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>CSS Animation & Media Queries</h1>
+
+  <div class="box"></div>
+
+  <div class="circle"></div>
+
+  <button>Hover Me</button>
+
+</body>
+</html>
