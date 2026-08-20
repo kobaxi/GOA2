@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 77</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--
+    1) პსევდო სელექტორი და პსევდო ელემენტი
+
+    პსევდო სელექტორი (Pseudo-class) გამოიყენება ელემენტის
+    კონკრეტული მდგომარეობის შესაცვლელად.
+    მაგალითად:
+    :hover
+    :focus
+    :active
+    :first-child
+
+    პსევდო ელემენტი (Pseudo-element) გამოიყენება ელემენტის
+    კონკრეტული ნაწილის შესაცვლელად ან ახალი ვირტუალური
+    ელემენტის შესაქმნელად.
+
+    პსევდო ელემენტი ყოველთვის იწყება ::
+    მაგალითად:
+    ::before
+    ::after
+    ::first-letter
+    ::first-line
+    -->
+
+
+
+    <!--
+    2) პსევდო ელემენტები
+
+    ::before
+    ქმნის ვირტუალურ ელემენტს ტექსტის ან ელემენტის დასაწყისში.
+
+    ::after
+    ქმნის ვირტუალურ ელემენტს ელემენტის ბოლოს.
+
+    ::first-letter
+    ცვლის ტექსტის მხოლოდ პირველ ასოს.
+
+    ::first-line
+    ცვლის მხოლოდ პირველ ხაზს.
+
+    ::selection
+    იცვლის მონიშნული ტექსტის ფერს და ფონს.
+
+    ::backdrop
+    ცვლის dialog-ის უკანა ფონს.
+
+    ::marker
+    ცვლის ul ან ol სიების მარკერებს.
+    -->
+
+
+    <!--
+    3) dialog
+
+    dialog არის HTML5-ის თეგი, რომლის საშუალებით
+    იქმნება მოდალური ფანჯარა.
+
+    dialog-ის გახსნა ხდება:
+
+    dialog.showModal();
+
+    დახურვა:
+
+    dialog.close();
+
+    showModal() ხსნის dialog-ს.
+
+    close() კეტავს dialog-ს.
+    -->
+
+
+    <button id="openBtn">Open Modal</button>
+
+    <dialog id="modal">
+
+        <h1>Welcome</h1>
+
+        <p>This is dialog window.</p>
+
+        <img src="https://picsum.photos/250/150" alt="">
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <button id="closeBtn">Close</button>
+
+    </dialog>
+
+
+
+    <button id="openModal2">Backdrop Example</button>
+
+    <dialog id="modal2">
+
+        <h2>Backdrop Example</h2>
+
+        <p>This dialog has backdrop.</p>
+
+        <button id="closeModal2">Close</button>
+
+    </dialog>
+
+    <p class="letter">
+        JavaScript is one of the most popular programming languages.
+    </p>
+
+    <p class="line">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Quisquam officiis omnis vero inventore.
+    </p>
+
+    <ul class="list">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Mango</li>
+    </ul>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

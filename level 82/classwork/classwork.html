@@ -1,0 +1,76 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * img {
+            width: 100%;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+        }
+
+        * .box .card {
+            border: 1px solid black;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+        }
+
+        .card button {
+            outline: 0;
+            border: 0;
+            width: 100%;
+            background-color: yellowgreen;
+            margin-top: 10px;
+            padding: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="card" id="card1">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/012/086/172/small_2x/green-apple-with-green-leaf-isolated-on-white-background-vector.jpg">
+            <h2>Green Apple</h2>
+            <span>Price: $5.00</span>
+            <button>Add To Cart</button>
+        </div>
+
+        <div class="card" id="card2">
+            <img src="https://assets.epicurious.com/photos/54b27e739a93d64c380b00ea/1:1/w_2560%2Cc_limit/368790_fried-chicken_1x1.jpg">
+            <h2>Fried Chicken</h2>
+            <span>Price: $13.00</span>
+            <button>Add To Cart</button>
+        </div>
+
+        <div class="card" id="card3">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/19/dc/6a/37/xinkali.jpg">
+            <h2>Xinkali</h2>
+            <span>Price: $1.50</span>
+            <button>Add To Cart</button>
+        </div>
+
+        <div class="card" id="card4">
+            <img src="https://storage.georgia.travel/images/beans-2.webp">
+            <h2>Qotnis Lobio</h2>
+            <span>Price: $10.00</span>
+            <button>Add To Cart</button>
+        </div>
+    </div>
+
+    <div id="cart">
+        
+    </div>
+
+    <script src="./classwork.js"></script>
+</body>
+</html>
+```

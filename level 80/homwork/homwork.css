@@ -1,0 +1,26 @@
+.even{
+    background-color: lightblue;
+    color: blue;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.odd{
+    background-color: rgb(80, 35, 0);
+    color: orange;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.good_job{
+    color: green;
+}
+.nice{
+    color: lightgreen;
+}
+.ok{
+    color: gold;
+}
+.bad{
+    color: red;
+}

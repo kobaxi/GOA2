@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sprite Animation</title>
+
+<style>
+body{
+    margin:0;
+    overflow:hidden;
+    background:#87CEEB;
+}
+
+#player{
+    position:absolute;
+    left:0;
+    bottom:50px;
+    width:48px;
+    height:48px;
+
+    background:url("./Screenshot_2026-07-23_142107-removebg-preview.png");
+    animation: walk .6s steps(4) infinite;
+    animation-play-state: paused;
+}
+
+@keyframes walk{
+    from{
+        background-position:0 0;
+    }
+    to{
+        background-position:-192px 0;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div id="player"></div>
+
+<script>
+
+const player = document.getElementById("player");
+
+let x = 0;
+let move = false;
+
+document.addEventListener("keydown",function(e){
+
+    if(e.code=="Space"){
+        move = true;
+        player.style.animationPlayState = "running";
+    }
+
+});
+
+document.addEventListener("keyup",function(e){
+
+    if(e.code=="Space"){
+        move = false;
+        player.style.animationPlayState = "paused";
+    }
+
+});
+
+setInterval(function(){
+
+    if(move){
+        x += 5;
+        player.style.left = x + "px";
+    }
+
+},50);
+
+</script>
+
+</body>
+</html>

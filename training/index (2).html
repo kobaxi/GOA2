@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+
+    <style>
+
+        body {
+            min-height: 900px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            font-family: Arial, sans-serif;
+        }
+
+        .first_slider {
+            width: 700px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .second_slider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #img {
+            width: 500px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+
+        #back,
+        #forward {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #back:hover,
+        #forward:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+
+        .back-img,
+        .forward-img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        .back-img {
+            transform: rotate(0deg);
+        }
+
+        .forward-img {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="first_slider">
+        <h1 class="title">Image Slider</h1>
+        <div class="second_slider">
+            <button id="back">
+                <img class="back-img"src="https://png.pngtree.com/png-vector/20190420/ourmid/pngtree-previous-vector-icon-png-image_963794.jpg"alt="Back"></button><img id="img" src="" alt="Slider Image">
+            <button id="forward">
+                <img class="forward-img"src="https://png.pngtree.com/png-vector/20190420/ourmid/pngtree-previous-vector-icon-png-image_963794.jpg"alt="Forward">
+        </button>
+    </div>
+</div>
+
+<script>
+    let img = document.getElementById("img");
+    let forward = document.getElementById("forward");
+    let back = documnet.getElementById("back");
+    let img_list = [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYiVLTsWd-CV6jDIT4e6Oll-5HiUEJcuLIbS67tcDyA&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQStaz9zBzu3TfuKtZ6AZ-jgx66rHEmkJDrGjX_eXftgg&s=10",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR52P9lvNOColejN9UEEm5gm98_T0rYxxUYBu71uViREQ&s",
+    ]
+    let index = 0;
+    img.setAttribute("src",img_list[index])
+    forward.addEventListener("click", function forwardvector(){
+        if(index === 0){
+            index = 3;
+            img.setAttribute("src",img_list[index])
+        }else{
+            index--;
+            img.setAttribute("src",img_list[index])
+        }
+    });
+    back.addEventListener("click",function backvector(){
+        if(index === 3){
+            index = 0;
+            img.setAttribute("src",img_list[index])
+        }else{
+            index++;
+            img.setAttribute("src",img_list[index])
+        }
+    });
+</script>
+
+</body>
+</html>

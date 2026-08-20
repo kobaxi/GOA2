@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript დავალებები</title>
+</head>
+<body>
+
+    <!--
+    1) document არის JavaScript-ის ჩაშენებული ობიექტი,
+    რომელიც წარმოადგენს მთლიან HTML დოკუმენტს.
+
+    getElementById() - პოულობს ელემენტს მისი id-ის მიხედვით და აბრუნებს ერთ ელემენტს.
+
+    getElementsByClassName() - პოულობს ყველა ელემენტს მითითებული class-ის მიხედვით და აბრუნებს HTMLCollection-ს.
+
+    getElementsByTagName() - პოულობს ყველა ელემენტს თეგის სახელით და აბრუნებს HTMLCollection-ს.
+
+    querySelector() - აბრუნებს პირველ ელემენტს, რომელიც შეესაბამება CSS Selector-ს.
+
+    querySelectorAll() - აბრუნებს ყველა ელემენტს, რომელიც შეესაბამება CSS Selector-ს და აბრუნებს NodeList-ს.
+    -->
+
+    <!--
+    2) HTMLCollection არის HTML ელემენტების კოლექცია.
+    იგი ჰგავს მასივს, მაგრამ მასივი არ არის.
+
+    HTMLCollection-ს ვიღებთ:
+    - getElementsByClassName()
+    - getElementsByTagName()
+
+    ელემენტებს ვწვდებით ინდექსებით:
+    collection[0], collection[1] და ა.შ.
+    -->
+
+    <h2>დავალება 3</h2>
+
+    <p class="text-item">პირველი პარაგრაფი</p>
+    <p class="text-item">მეორე პარაგრაფი</p>
+    <p class="text-item">მესამე პარაგრაფი</p>
+    <p class="different-text">მეოთხე პარაგრაფი</p>
+
+    <h2>დავალება 4</h2>
+
+    <div class="container">
+        <p>პირველი</p>
+        <p>მეორე</p>
+        <p>მესამე</p>
+    </div>
+
+    <h2>დავალება 5</h2>
+
+    <ul class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+
+    <script>
+        // დავალება 3
+        let paragraphs = document.getElementsByClassName("text-item");
+
+        for(let i = 0; i < paragraphs.length; i++){
+            paragraphs[i].style.color = "blue";
+        }
+
+        // დავალება 4
+        let firstParagraph = document.querySelector(".container p");
+        firstParagraph.textContent = "განახლებული პირველი პარაგრაფი";
+
+        // დავალება 5
+        let menuItems = document.querySelectorAll(".menu li");
+
+        for(let i = 0; i < menuItems.length; i++){
+            menuItems[i].textContent += " *";
+        }
+    </script>
+
+</body>
+</html>

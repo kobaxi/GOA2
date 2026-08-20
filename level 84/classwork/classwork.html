@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+
+<form onclick="place">
+    <input type="text" id="name" placeholder="enter your name: "><br><br>
+    
+    <input type="text" id="email" placeholder="enter your name: "><br><br>
+
+    <input type="text" id="password" placeholder="enter your name: "><br><br>
+
+
+    <button type="button" onclick="place()">Sign Up</button>
+</form>
+
+<script >
+    function place() {
+    let password = document.getElementById("password");
+
+    if (password.length == 8) {
+        alert("Sign Up");
+    } else {
+        alert("Password must be 8 characters!");
+    }
+}
+</script>
+</body>
+</html>

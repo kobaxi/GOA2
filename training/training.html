@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div_1" class="div_1">
+        <button id="but">click</button>
+    </div>
+
+
+<script>
+    let main = document.getElementById("div")
+    let min = document.getElementById("but")
+    function gg(e){
+        e.target // targeti consolshi achvenebs tu ra aris
+        e.type // consolshi achvenebs tu ra typis event liseneria
+        e.preventDefault() // airidebs tavvidan raime magalitad daklikebas daklikebis gareshe
+    console.log(e.type)
+    console.log(e.target)
+    console.log(e.target.parentElement)
+    }
+    min.addEventListener("click",gg) 
+</script>
+</body>
+</html>

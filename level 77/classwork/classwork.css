@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+dialog{
+    width: 500px;
+    padding: 30px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+}
+
+dialog h1{
+    margin-bottom: 20px;
+}
+
+dialog p{
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: crimson;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background: red;
+}
+
+dialog::backdrop{
+    background: rgba(0,0,0,.7);
+    backdrop-filter: blur(5px);
+}
